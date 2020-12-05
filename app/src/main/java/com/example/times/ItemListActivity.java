@@ -19,6 +19,8 @@ import android.widget.TextView;
 
 import com.example.times.dummy.TeamContent;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
 
 /**
@@ -109,6 +111,7 @@ public class ItemListActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
             holder.mContentView.setText(mValues.get(position).content);
+            holder.mLocation.setText(mValues.get(position).city + " - " + mValues.get(position).state);
             holder.mImage.setImageResource(mValues.get(position).image);
             holder.itemView.setTag(mValues.get(position));
             holder.itemView.setOnClickListener(mOnClickListener);
@@ -122,11 +125,13 @@ public class ItemListActivity extends AppCompatActivity {
         class ViewHolder extends RecyclerView.ViewHolder {
             final TextView mContentView;
             final ImageView mImage;
+            final TextView mLocation;
 
             ViewHolder(View view) {
                 super(view);
                 mImage = (ImageView) view.findViewById(R.id.imageViewLogo);
                 mContentView = (TextView) view.findViewById(R.id.content);
+                mLocation = (TextView) view.findViewById(R.id.location);
             }
         }
     }

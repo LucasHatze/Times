@@ -18,7 +18,7 @@ public class TeamContent {
                 "Chelsea FC",
                 "Time Inglês que só ganhou champions league com o Drogba",
                 "Londres",
-                "N/A",
+                "Inglaterra",
                 "Campeonato Inglês: 6"));
 
         addItem(createTeamItem(
@@ -27,7 +27,7 @@ public class TeamContent {
                 "Manchester City FC",
                 "Nada, nada e morre na praia. Santos da Inglaterra.",
                 "Manchester",
-                "N/A",
+                "Inglaterra",
                 "Campeonato Inglês: 6"));
 
         addItem(createTeamItem(3,
@@ -35,7 +35,7 @@ public class TeamContent {
                 "Totteham FC",
                 "Aquele Time que tem vários highlights no youtube e nenhum título.",
                 "Londres",
-                "N/A",
+                "Inglaterra",
                 "Campeonato Inglês: 2"));
 
         addItem(createTeamItem(4,
@@ -43,7 +43,7 @@ public class TeamContent {
                 "Manchester United FC",
                 "Estão esperando o CR7 ir se aposentar neles.",
                 "Manchester",
-                "N/A",
+                "Inglaterra",
                 "Campeonato Inglês: 20"));
     }
 
